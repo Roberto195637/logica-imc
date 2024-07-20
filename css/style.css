@@ -1,0 +1,107 @@
+
+body{
+    /* mudar a cor do fundo do site(body) */
+    background-color: #003366;
+    /* mudar as margens do site */
+    margin: 0;
+    /* mudar tipo de fonte */
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+#flex-center{
+    /* centralizar todo conteudo do body na tela */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    /* retira os espaços das imagens */
+    display: block;  
+    cursor: pointer;
+}
+
+
+h1{
+    /* Tamanho da fonte */
+    font-size: 36px;
+    /* cor da fonte */
+    color: #333;
+    margin-bottom: 0;
+
+}
+
+p{
+    margin-top: 0;
+   
+
+}
+
+form{
+    margin-top: 30px;
+}
+input{
+    width: 460px;
+    height: 35px;
+    box-sizing: border-box;  /* formata altura e largura da caixa (input)*/
+    border-radius: 3px;   /*arredondar borda da caixa (input)  */
+    border:#ccc solid 1px;
+    margin-bottom: 15px; /*espaço para baixo entre as caixas*/
+    margin-top: 6px;
+    cursor: pointer;
+}
+button{
+    background-color: #003366;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 45px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #666;
+}
+label{
+    margin-bottom: 15px;
+}
+#principal{
+    
+    width: 1000px; 
+    height: 560px;
+    color: #666;
+
+
+    background-color: #ffffff;
+    
+    /* flexbox (conjunto de propriedades css para layout)  */
+    display: flex;
+    align-items: center; /*alinhamento vertical dos itens*/
+    gap: 25px;/*espaçamento entre os itens*/
+    /*margin: 104px 181px; margem de cima e margem de baixo*/
+
+ 
+}
+
+
+/* Media queries (condições no css)*/
+@media (max-width: 1000px){
+    #foto{
+        display: none;
+    }
+    
+    #principal{
+        width: 70%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 50px){
+    #principal{
+        width: 70;
+        height: auto;
+    }
+}
+
